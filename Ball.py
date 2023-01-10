@@ -8,8 +8,8 @@ class Ball(Turtle):
         self.shapesize(0.75)
         self.color('white')
         self.speed = 10
-        self.headangle = 270
-        self.goto(0, 280)
+        self.headangle = 92
+        self.goto(0, -260)
 
     def move(self):
         self.setheading(self.headangle)
@@ -28,7 +28,7 @@ class Ball(Turtle):
             self.headangle = 50 + randint(-5, 5)
 
     def spring_top(self):
-        self.headangle = 360 - self.headangle - randint(-5, 5)
+        self.headangle = 135 + self.headangle - randint(-5, 5)
 
 
     def spring_left(self):
@@ -36,3 +36,6 @@ class Ball(Turtle):
 
     def spring_right(self):
         self.headangle = 180 - self.headangle - randint(-5, 5)
+
+#-300 60 -290.0 50.0
+# 0 0 2.4492935982947065e-15 10.0
